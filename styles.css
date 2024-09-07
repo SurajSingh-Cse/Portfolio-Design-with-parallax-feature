@@ -1,0 +1,146 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Parallax Effect */
+.parallax {
+    background-image: url('https://wallpaperaccess.com/full/26208.jpg');
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Home Section */
+#home {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+}
+
+.name-animation {
+    font-size: 50px;
+    font-weight: bold;
+    color: #e8491d;
+    animation: fadeInAndScale 2s ease-in-out forwards;
+}
+
+/* Keyframes for Name Animation */
+@keyframes fadeInAndScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Button Styling */
+.btn {
+    background: #e8491d;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background: #c63c1b;
+    transform: scale(1.05);
+}
+
+/* About Section */
+#about {
+    padding: 60px 0;
+    text-align: center;
+}
+
+/* Projects Section */
+#projects {
+    background: #eaeaea;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px 0;
+    text-align: center;
+}
+
+#contactForm {
+    width: 50%;
+    margin: auto;
+    text-align: left;
+}
+
+#contactForm label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#contactForm input, #contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#contactForm button {
+    background: #e8491d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
